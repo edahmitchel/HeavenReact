@@ -9,6 +9,9 @@ import Who_we_Are from './components/Services';
 import Services from './components/Services';
 import Cta from './components/Cta';
 import Hero from './components/Hero';
+import Testimoials from './components/Testimoials';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -38,6 +41,16 @@ function App() {
         <Cta />
         {/* <!-- End Cta Section --> */}
 
+        {/* <!-- ======= Testimonials Section ======= --> */}
+        <Testimoials />
+        {/* <!-- End Testimonials Section --> */}
+
+        {/* <!-- ======= Contact Section ======= --> */}
+        <Contact />
+        {/* <!-- End Contact Section --> */}
+
+
+        <Footer/>
       </main>
     </>
   )
