@@ -3,9 +3,9 @@ import ImgOne from "../assets/2.webp"
 import ImgTwo from "../assets/1.webp"
 import ImgThree from "../assets/3.webp"
 import ImgFour from "../assets/4.webp"
-import { RiGpsLine } from "react-icons/ri";
+// import { RiGpsLine } from "react-icons/ri";
 import { MdDocumentScanner, MdOutlineGpsFixed, MdOutlineStoreMallDirectory, MdOutlineWbSunny } from 'react-icons/md'
-import { TbBodyScan } from "react-icons/tb";
+// import { TbBodyScan } from "react-icons/tb";
 
 
 
