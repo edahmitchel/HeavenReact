@@ -1,10 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../App.css"
 import { MdMenu, MdOutlineClose } from 'react-icons/md'
 
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("Scrolling...");
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
 
 
   const handleToggle = () => {
@@ -12,7 +29,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+ <header id="header" className={`fixed-top d-flex align-items-center header-transparent ${scrolled ? 'scrolled' : ''}`}>
         <div class="container d-flex align-items-center justify-content-between">
 
           <div class="logo">

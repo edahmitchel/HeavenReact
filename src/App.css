@@ -24,15 +24,6 @@ a:hover {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /* font-family: "Raleway", sans-serif; */
-}
-
 /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -78,14 +69,19 @@ h6 {
 /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
-#header {
+
+
+  #header {
     height: 70px;
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
     background: rgba(42, 44, 57, 0.9);
+    transition: background-color 0.3s ease-in-out;
 }
-
+#header.scrolled {
+    background-color: #333 !important; /* Change this to your desired background color */
+  }
 #header.header-transparent {
     background: transparent;
 }
