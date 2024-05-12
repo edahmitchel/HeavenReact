@@ -7,6 +7,7 @@ import { IoCheckmarkDone } from "react-icons/io5";
 import About from './components/About';
 import Who_we_Are from './components/Services';
 import Services from './components/Services';
+import Cta from './components/Cta';
 
 
 function App() {
@@ -144,6 +145,8 @@ function App() {
         {/* <!-- End About Section --> */}
 
         <Services />
+
+        <Cta/>
       </main>
     </>
   )
