@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* body{
     font-family: "Roboto", sans-serif;
@@ -8,8 +9,9 @@
 
 
 body {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Raleway", sans-serif !important;
     color: #444444;
+    font-weight: 400;
 }
 
 a {
@@ -655,7 +657,7 @@ section {
     border: 1px solid #d4d6df !important;
     /* padding: 15px; */
     transition: 0.3s;
-    color: #2a2c39;
+    color: #2a2c39 !important;
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -676,7 +678,7 @@ section {
   }
   
   .features .nav-link:hover {
-    color: #ef6603;
+    color: #ef6603 !important;
   }
   
   .features .nav-link.active {

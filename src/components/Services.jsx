@@ -4,8 +4,8 @@ import ImgTwo from "../assets/1.webp"
 import ImgThree from "../assets/3.webp"
 import ImgFour from "../assets/4.webp"
 import { RiGpsLine } from "react-icons/ri";
-import { MdOutlineGpsFixed } from 'react-icons/md'
-
+import { MdDocumentScanner, MdOutlineGpsFixed, MdOutlineStoreMallDirectory, MdOutlineWbSunny } from 'react-icons/md'
+import { TbBodyScan } from "react-icons/tb";
 
 
 
@@ -57,19 +57,22 @@ const Services = () => {
                         </li>
                         <li class="nav-item  col-3" onClick={handleTabTwo} data-aos="zoom-in" data-aos-delay="100">
                             <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-                                <i class="ri-body-scan-line"></i>
+                                {/* <i class="ri-body-scan-line"></i> */}
+                                <MdDocumentScanner className='services_icons' />
                                 <h4 class="d-none d-lg-block">Empowering Children to Thrive:</h4>
                             </a>
                         </li>
                         <li class="nav-item  col-3" onClick={handleTabThree} data-aos="zoom-in" data-aos-delay="200">
                             <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-                                <i class="ri-sun-line"></i>
+                                {/* <i class="ri-sun-line"></i> */}
+                                <MdOutlineWbSunny className='services_icons' />
                                 <h4 class="d-none d-lg-block">Creating a Culture of Prevention and Intervention:</h4>
                             </a>
                         </li>
                         <li class="nav-item  col-3" onClick={handleTabFour} data-aos="zoom-in" data-aos-delay="300">
                             <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                                <i class="ri-store-line"></i>
+                                {/* <i class="ri-store-line"></i> */}
+                                <MdOutlineStoreMallDirectory className='services_icons' />
                                 <h4 class="d-none d-lg-block">Building Stronger Families and Communities</h4>
                             </a>
                         </li>
