@@ -43,11 +43,12 @@ const PaymentForm = ({ onClose }) => {
         });
 
         setIsProcessingPayment(false);
-
+        console.log(paymentResult)
         if (paymentResult.error) {
             toast.error(paymentResult.error.message); // Display error message using toast
         } else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
+                alert('Payment Successful!')
                 toast.success('Payment Successful!'); // Display success message using toast
                 onClose(); // Close the payment form modal after successful payment
             }
