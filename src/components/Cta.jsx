@@ -41,7 +41,7 @@ const Cta = () => {
 };
   return (
     <div>
-      <section id="cta" className="cta">
+      <section id="donate" className="cta">
         <div className="container">
           <div className="row" data-aos="zoom-out">
             <div className="col-lg-9 text-center text-lg-start">

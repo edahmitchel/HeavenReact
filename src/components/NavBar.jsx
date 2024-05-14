@@ -49,7 +49,7 @@ const NavBar = () => {
               <li><a class="nav-link scrollto" href="#about">Who we are</a></li>
               <li><a class="nav-link scrollto" href="#services">Causes</a></li>
               {/* <!-- <li><a class="nav-link scrollto " href="#portfolio">Stories</a></li> --> */}
-              <li><a class="nav-link scrollto" href="#">Donate Now</a></li>
+              <li><a class="nav-link scrollto" href="#donate">Donate Now</a></li>
               {/* <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --> */}
               <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
 
@@ -71,7 +71,7 @@ const NavBar = () => {
               <li><a class="nav-link scrollto" href="#about" onClick={closeMenu}>Who we are</a></li>
               <li><a class="nav-link scrollto" href="#services" onClick={closeMenu}>Causes</a></li>
               {/* <!-- <li><a class="nav-link scrollto " href="#portfolio">Stories</a></li> --> */}
-              <li><a class="nav-link scrollto" href="#" onClick={closeMenu}>Donate Now</a></li>
+              <li><a class="nav-link scrollto" href="#donate" onClick={closeMenu}>Donate Now</a></li>
               {/* <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --> */}
               <li><a class="nav-link scrollto" href="#contact" onClick={closeMenu}>Contact</a></li>
 
