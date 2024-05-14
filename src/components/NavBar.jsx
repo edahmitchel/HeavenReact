@@ -27,6 +27,11 @@ const NavBar = () => {
   const handleToggle = () => {
     setMenu(!menu)
   }
+
+  const closeMenu = () => {
+    setMenu(false); 
+  };
+
   return (
     <>
       <header id="header" className={`fixed-top d-flex align-items-center header-transparent ${scrolled ? 'scrolled' : ''}`}>
@@ -62,13 +67,13 @@ const NavBar = () => {
           <MdOutlineClose className='closeIcon' onClick={handleToggle} />
           <div className='mobile_nav_links_container'>
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#about">Who we are</a></li>
-              <li><a class="nav-link scrollto" href="#services">Causes</a></li>
+              <li><a class="nav-link scrollto active" href="#hero" onClick={closeMenu}>Home</a></li>
+              <li><a class="nav-link scrollto" href="#about" onClick={closeMenu}>Who we are</a></li>
+              <li><a class="nav-link scrollto" href="#services" onClick={closeMenu}>Causes</a></li>
               {/* <!-- <li><a class="nav-link scrollto " href="#portfolio">Stories</a></li> --> */}
-              <li><a class="nav-link scrollto" href="#">Donate Now</a></li>
+              <li><a class="nav-link scrollto" href="#" onClick={closeMenu}>Donate Now</a></li>
               {/* <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --> */}
-              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li><a class="nav-link scrollto" href="#contact" onClick={closeMenu}>Contact</a></li>
 
             </ul>
           </div>

@@ -631,6 +631,7 @@ section {
 .mobile_nav_links_container ul li {
     list-style: none;
     line-height: 43px;
+    font-weight: 600;
     border-radius: 30px;
     margin: 15px 0px;
     padding: 0px 15px;
@@ -767,6 +768,7 @@ section {
     transition: 0.5s;
     margin: 10px;
     color: #fff;
+    border: none;
     background: #ef6603;
 }
 
@@ -774,10 +776,46 @@ section {
     background: #fff;
     color: #ef6603;
 }
+.payment{
+    display: flex;
+    justify-content: space-between;
+}
+.payment button{
+    background: #2a2c39;
+    border: none;
+    padding: 9px 17px;
+    font-weight: 500;
+    color: white;
+    border-radius: 20px;
+}
+.eth{
+    font-weight: 500;
+    cursor: pointer;
+}
+.eth_text{
+    font-weight: 700;
+}
+
+  /* ============= Payment Form ========= */
+  .form_button{
+    background-color: #2a2c39 !important;
+    color: white !important;
+  }
+  .payment_form label{
+    font-weight: 600;
+  }
 
 @media (max-width: 1024px) {
     .cta {
         background-attachment: scroll;
+    }
+}
+@media (max-width: 500px){
+    .eth{
+      font-size: 12px;
+    }
+    .payment button{
+        font-size: 13px;
     }
 }
 
@@ -1074,3 +1112,4 @@ section {
   #footer .credits {
     font-size: 13px;
   }
+

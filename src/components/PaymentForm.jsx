@@ -64,7 +64,7 @@ const PaymentForm = ({ onClose }) => {
                         <button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
                     </div>
                     <div className="modal-body">
-                        <form onSubmit={paymentHandler}>
+                        <form onSubmit={paymentHandler} className='payment_form'>
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label">Name:</label>
                                 <input type="text" id="name" className="form-control" value={name} onChange={(e) => setName(e.target.value)} />
@@ -77,7 +77,7 @@ const PaymentForm = ({ onClose }) => {
                                 <label htmlFor="card-element" className="form-label">Card Information:</label>
                                 <CardElement id="card-element" className="form-control" />
                             </div>
-                            <button type="submit" className="btn btn-primary" disabled={isProcessingPayment}>Pay Now</button>
+                            <button type="submit" className="btn form_button" disabled={isProcessingPayment}>Pay Now</button>
                         </form>
                     </div>
                 </div>
