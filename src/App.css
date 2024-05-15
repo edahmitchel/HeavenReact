@@ -778,6 +778,8 @@ section {
   color: #2a2c39;
   transition: background-color 0.3s ease, color 0.3s ease;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
   /* border-radius: 20px; */
 }
 .payment button.active {

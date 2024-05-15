@@ -52,7 +52,7 @@ function PaymentForm({ onClose }) {
                                 className={`payment ${paymentInfo.paymentMethod === 'crypto' ? 'active' : ''}`}
                                 onClick={() => handlePaymentMethodChange('crypto')}
                             >
-                                <FaEthereum /> Crypto Payment
+                                <FaEthereum />Crypto Payment
                             </button>
                         </div>
 
