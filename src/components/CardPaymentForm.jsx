@@ -28,7 +28,7 @@ const CardPaymentForm = ({ onClose }) => {
         if (response.ok) {
             window.location.href = data.url;
         } else {
-            toast.error('Failed to create payment link: ' );
+            toast.error('Failed to create payment link');
         }
     };
 
@@ -41,8 +41,11 @@ const CardPaymentForm = ({ onClose }) => {
                     <input type="text" id="name" className="form-control" value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="amount" className="form-label">Amount:</label>
-                    <input type="number" id="amount" className="form-control" min="0" step="1" value={amount} onChange={handleAmountChange} />
+                    <label htmlFor="amount" className="form-label">Amount ($):</label>
+                    <div className="input-group">
+                        <span className="input-group-text">$</span>
+                        <input type="number" id="amount" className="form-control" min="0" step="1" value={amount} onChange={handleAmountChange} />
+                    </div>
                 </div>
 
                 <button type="submit" className="btn form_button" disabled={isProcessingPayment}>Generate Payment Link</button>
