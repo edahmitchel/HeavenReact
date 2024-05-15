@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 import 'react-toastify/dist/ReactToastify.css';
 
 const CardPaymentForm = ({ onClose }) => {
@@ -47,7 +47,7 @@ const CardPaymentForm = ({ onClose }) => {
 
                 <button type="submit" className="btn form_button" disabled={isProcessingPayment}>Generate Payment Link</button>
             </form>
-            <ToastContainer />
+            <Toaster />
         </div>
     );
 };

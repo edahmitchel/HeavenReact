@@ -13,7 +13,7 @@ import Testimoials from './components/Testimoials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { useLocation } from 'react-router-dom';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 function App() {
   const location = useLocation(); // This will require that your app is wrapped with <BrowserRouter>
 
@@ -68,6 +68,7 @@ function App() {
 
 
         <Footer />
+        <Toaster />
       </main>
     </>
   )

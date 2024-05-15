@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { FaCreditCard, FaEthereum, FaCopy } from 'react-icons/fa';
-import { toast, ToastContainer } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 import 'react-toastify/dist/ReactToastify.css';
 import CardPaymentForm from './CardPaymentForm';
 
@@ -70,7 +70,7 @@ function PaymentForm({ onClose }) {
                                     <p className='eth' onClick={handleCopyAddress}>0x0D818F0759d1650018b235eaA45bb82cea4c0EE2 <FaCopy /></p>
                                 </div>
                             )}
-                            <ToastContainer />
+                            <Toaster />
                         </div>
                     </div>
                 </div>
