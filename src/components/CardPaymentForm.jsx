@@ -28,7 +28,7 @@ const CardPaymentForm = ({ onClose }) => {
         if (response.ok) {
             window.location.href = data.url;
         } else {
-            toast.error('Failed to create payment link: ' + data.error);
+            toast.error('Failed to create payment link: ' );
         }
     };
 
