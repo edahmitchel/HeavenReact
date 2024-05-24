@@ -76,6 +76,7 @@ a:hover {
   transition: all 0.5s;
   background: rgba(42, 44, 57, 0.9);
   transition: background-color 0.3s ease-in-out;
+  background-color: white !important;
 }
 
 #header.scrolled {
@@ -102,7 +103,8 @@ a:hover {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #fff;
+  color: #fc7c1f;
+
   text-decoration: none;
 }
 
@@ -142,7 +144,7 @@ a:hover {
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
   font-size: 14px;
-  color: #fff;
+  color: #fc7c1f;
   white-space: nowrap;
   transition: 0.3s;
   border-radius: 50px;
@@ -159,7 +161,7 @@ a:hover {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  background: #ef6603;
+  background: white;
 }
 
 .navbar .dropdown ul {
@@ -232,7 +234,7 @@ a:hover {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #fc7c1f;
   font-size: 28px;
   cursor: pointer;
   display: none;
